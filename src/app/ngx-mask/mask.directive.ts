@@ -22,8 +22,8 @@ import { IConfig } from './config';
   ]
 })
 export class MaskDirective implements ControlValueAccessor {
-  private _maskValue: string;
-  private _inputValue: string;
+  private _maskValue: any;
+  private _inputValue: any;
   private _position: number | null = null;
   // tslint:disable-next-line
   public onChange = (_: any) => { };
